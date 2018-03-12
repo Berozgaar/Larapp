@@ -43,6 +43,6 @@ public function send(Request $request)
     });
 
 
-    return redirect('/email')->with('flash_message', 'Your mail has been sent to '. $data['to'].' !');
+    return redirect('/email')->with('flash_message', 'Your mail has been sent to '. $data['to'].'!');
     }
 }

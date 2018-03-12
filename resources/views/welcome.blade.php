@@ -30,6 +30,7 @@
                     padding-right: .5rem !important;
                      padding-left: .5rem !important;
                 }
+
         </style>
     </head>
     <body>

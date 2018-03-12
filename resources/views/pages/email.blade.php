@@ -1,16 +1,16 @@
 @extends('welcome')
 @section('content')
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 pull-right">
         <div class="jumbotron">
             @if (Session::has('flash_message'))
-            <div class="alert alert-success msg">{{ Session::get('flash_message') }}</div>
+            <div class="alert alert-success msg"><strong>{{ Session::get('flash_message') }}</strong></div>
             @endif
             <form action="{{route('email.send')}}" method="post">
                 {{ csrf_field() }}
                 <div class="form-group">
                   <label for="name">Fullname</label>
-                  <input type="text" class="form-control" name="name" placeholder="John Doe">
+                  <input type="text" class="form-control" name="name" placeholder="John Doe" required>
                 </div>
                 <div class="form-group">
                   <label for="from">Sender E-mail Address</label>

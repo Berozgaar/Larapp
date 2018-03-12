@@ -12,10 +12,7 @@
 							background: #b3c2bf;
 							background-color: #b3c2bf;
 						}
-						.form-field {
 
-
-						}
 			</style>
 </head>
 <body>
@@ -24,27 +21,25 @@
 			<div class="row col-md-8">
 				<form>
 					<div class="form-row">
-										<h3>You Have a New Contact Via the Contact Form</h3>
-
+										<h3>You Have a New Email</h3>
+										<hr />
+										<div class="form-group form-field">
+											<label>Sender's Email</label> : {{ $from}}
+										</div>
 										<div class="form-group form-field">
 											<label>Full Name</label> : {{ $name}}
 										</div>
 										<div class="form-group form-field">
-											<label>Message</label> : {{ $msgbody}}
+											 {{ $subject}}
 										</div>
 										<div class="form-group form-field">
-											<p>
-												Best Regards
-											</p>
-											<p>
-												Ankit Chandgadkar
-											</p>
+											<label>Message</label> : {{ $msgbody}}
 										</div>
 					</div>
 				</form>
 				<footer>
 					<p>
-						Ankit Chandgadkar 2018
+						 Ankit Chandgadkar 2018
 					</p>
 				</footer>
 			</div>
