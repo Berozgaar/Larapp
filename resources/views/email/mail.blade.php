@@ -32,8 +32,21 @@
 										<div class="form-group form-field">
 											<label>Message</label> : {{ $msgbody}}
 										</div>
+										<div class="form-group form-field">
+											<p>
+												Best Regards
+											</p>
+											<p>
+												Ankit Chandgadkar
+											</p>
+										</div>
 					</div>
 				</form>
+				<footer>
+					<p>
+						Ankit Chandgadkar 2018
+					</p>
+				</footer>
 			</div>
 		</div>
 	</div>
