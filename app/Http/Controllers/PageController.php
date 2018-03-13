@@ -18,14 +18,14 @@ class PageController extends Controller
         'name' => 'required',
         'email' => 'required|email',
         'mobile' => 'required',
-        'message' => 'required',
+        'msgbody' => 'required',
         ]);
 
-    Mail::send('emails.contact', [
+    Mail::send('email.contactform', [
       'msgName' => $request->name,
       'msgEmail' => $request->email,
       'msgMobile' => $request->mobile,
-      'msgMessage' => $request->message,
+      'msgMessage' => $request->msgbody,
 
     ], function($mail) use($request) {
       $mail->from($request->email, $request->name);
@@ -36,6 +36,6 @@ class PageController extends Controller
 
 
 
-    return redirect('/contact')->with('flash_message', 'Thank You');
+    return redirect('/contact')->with('flash_message', 'We have recieved your details. We will get back to you shortly, Thank You');
     }
 }

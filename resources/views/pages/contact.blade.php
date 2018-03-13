@@ -8,25 +8,25 @@
     <div class="row">
         <div class="col-md-6">
             @if (Session::has('flash_message'))
-            <div class="alert alert-success msg">{{ Session::get('flash_message') }}</div>
+            <div class="alert alert-success msg"><strong>{{ Session::get('flash_message') }}</strong></div>
             @endif
             <form class="" action="{{ route('contact.store') }}" method="post">
                 {{csrf_field()}}
                 <div class="form-group">
-                  <label for="uname">Fullname</label>
-                  <input type="text" class="form-control" id="name" placeholder="Fullname">
+                  <label for="name">Fullname</label>
+                  <input type="text" class="form-control" name="name" placeholder="John Doe">
                 </div>
                 <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" class="form-control" id="email" placeholder="E-mail Address">
+                  <label for="email">Your Email Address</label>
+                  <input type="email" class="form-control" name="email" placeholder="johndoe@example.com">
                 </div>
                 <div class="form-group">
                   <label for="mobile">Mobile</label>
-                  <input type="text" class="form-control" id="mobile" placeholder="+91-1234567890">
+                  <input type="text" class="form-control" name="mobile" placeholder="+91-1234567890">
                 </div>
                 <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Type your message for us..."></textarea>
+                  <label for="msgbody">Message</label>
+                  <textarea class="form-control" name="msgbody" rows="5" placeholder="Type your message for us..."></textarea>
                 </div>
                 <button type="submit" name="submit">Submit</button>
             </form>
