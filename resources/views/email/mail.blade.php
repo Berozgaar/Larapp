@@ -9,38 +9,56 @@
 			<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 			<style>
 						.blue-bg {
-							background: #b3c2bf;
-							background-color: #b3c2bf;
+							background-color: #F0FFFF;
 						}
-
+						footer {
+							height: 25px;
+							font-size: 15px;
+							background-color: #00BFFF;
+						}
+						header{
+							background-color: #00BFFF;
+						}
+						.msg {
+								font-size: 25px;
+						}
+						.sign {
+							font-size: 20px;
+							color: gray;
+						}
 			</style>
 </head>
 <body>
 	<div class="jumbotron blue-bg">
-		<div class="container">
-			<div class="row col-md-8">
+		<header>
+			<h1>You Have a New Email</h1>
+		</header>
 				<form>
-					<div class="form-row">
-										<h3>You Have a New Email</h3>
-										<hr />
-										<div class="form-group form-field">
-											<label>Sender's Email</label> : {{ $from}}
-										</div>
-										<div class="form-group form-field">
-											<label>Full Name</label> : {{ $name}}
-										</div>
-										<div class="form-group form-field">
-											 {{ $subject}}
-										</div>
-										<div class="form-group form-field">
-											<label>Message</label> : {{ $msgbody}}
-										</div>
-					</div>
-				</form>
+							<div class="form-group form-field">
+										<label>Sender's Email</label> : {{ $from}}
+							</div>
+							<div class="form-group form-field">
+										 {{ $subject}}
+							</div>
+							<p>
+								Hello Mamu,
+							</p>
+							<p class="msg">
+									{{ $msgbody}}
+							</p>
+
+							<p class="sign">
+								<pre>
+								Best Regards,
+								 {{ $name}}
+								-Laramail
+								</pre>
+							</p>
+			</form>
 				<footer>
-					<p>
-						 Ankit Chandgadkar 2018
-					</p>
+					 <pre>
+							©Berozgaar Groups 2018
+					</pre>
 				</footer>
 			</div>
 		</div>

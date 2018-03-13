@@ -30,6 +30,14 @@
                     padding-right: .5rem !important;
                      padding-left: .5rem !important;
                 }
+                textarea {
+                  height: 150px;
+                }
+                header {
+                    position: relative;
+                    top: -20px;
+                    /* background-color: #00CDCD; */
+                }
 
         </style>
     </head>
