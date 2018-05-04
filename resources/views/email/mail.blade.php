@@ -57,7 +57,7 @@
 			</form>
 				<footer>
 					 <pre>
-							©Berozgaar Groups 2018
+							©Ankit Changadkar 2018
 					</pre>
 				</footer>
 			</div>
