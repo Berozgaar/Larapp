@@ -20,7 +20,7 @@
 							background-color: #00BFFF;
 						}
 						.msg {
-								font-size: 20px;
+								font-size: 18px;
 						}
 						.sign {
 							font-size: 20px;
