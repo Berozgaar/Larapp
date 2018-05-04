@@ -34,19 +34,18 @@
 			<h1>You Have a New Email</h1>
 		</header>
 				<form>
-							<div class="form-group form-field">
-										<label>Sender's Email</label> : {{ $from}}
-							</div>
-							<div class="form-group form-field">
-										 {{ $subject}}
-							</div>
 							<p>
 								Hello {{$name}},
 							</p>
+							<div class="form-group form-field">
+										 {{ $subject}}
+							</div>
 							<p class="msg">
 									{{ $msgbody}}
 							</p>
-
+							<div class="form-group form-field">
+										<label>Sender's Email</label> : {{ $from}}
+							</div>
 							<p class="sign">
 								<pre>
 								Best Regards,
