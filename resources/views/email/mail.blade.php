@@ -20,7 +20,7 @@
 							background-color: #00BFFF;
 						}
 						.msg {
-								font-size: 25px;
+								font-size: 20px;
 						}
 						.sign {
 							font-size: 20px;
@@ -34,10 +34,10 @@
 			<h1>You Have a New Email</h1>
 		</header>
 				<form>
-							<p>
+							<p class="msg">
 								Hello {{$name}},
 							</p>
-							<div class="form-group form-field">
+							<div class="form-group form-field msg">
 										 {{ $subject}}
 							</div>
 							<p class="msg">
