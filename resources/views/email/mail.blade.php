@@ -41,7 +41,7 @@
 										 {{ $subject}}
 							</div>
 							<p>
-								Hello Mamu,
+								Hello {{$name}},
 							</p>
 							<p class="msg">
 									{{ $msgbody}}
